@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 const roboto = Roboto({
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Navbar></Navbar>
+        {children}
+      </body>
     </html>
   );
 }
