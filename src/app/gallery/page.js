@@ -6,11 +6,15 @@ const GalleryPage = () => {
     <div>
       <h1 className="text-5xl text-center">Image Optimization</h1>
       <h2 className="text-center text-2xl">Regular Image Tag</h2>
-      {/* <img
+      <img
+        height={300}
+        width={500}
         className="mx-auto"
         src="https://i.ibb.co.com/XDc36q4/iqra.jpg"
         alt=""
-      /> */}
+      />
+      <h2 className="text-center text-2xl">Next Js image</h2>
+
       <Image
         src="https://i.ibb.co.com/XDc36q4/iqra.jpg"
         alt="Next image"
