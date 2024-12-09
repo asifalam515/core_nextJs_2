@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import profile from "../../assets/profile.jpg";
 
 const GalleryPage = () => {
   return (
@@ -18,6 +19,15 @@ const GalleryPage = () => {
       <Image
         src="https://i.ibb.co.com/XDc36q4/iqra.jpg"
         alt="Next image"
+        width={500}
+        height={300}
+        className="mx-auto"
+      ></Image>
+      <h2 className="text-center text-2xl">Local image by Nex js</h2>
+
+      <Image
+        src={profile}
+        alt="profile image"
         width={500}
         height={300}
         className="mx-auto"
