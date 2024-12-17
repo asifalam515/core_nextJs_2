@@ -6,7 +6,9 @@ export const metadata = {
 };
 const Page = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    cache: "force-cache",
+    next: {
+      revalidate: 5,
+    },
   });
   const shoes = await res.json();
   // console.log(data);
@@ -26,8 +28,10 @@ const Page = async () => {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">{shoe.title}</h2>
+              <h2 className="card-title">{shoe.title} </h2>
+              <button className="btn-sm btn btn-ghost"> {shoe.price} </button>
               <p>{shoe.description}</p>
+
               <div className="card-actions justify-end">
                 <button className="btn btn-primary">Buy Now</button>
                 <button className="btn btn-warning">Details</button>
