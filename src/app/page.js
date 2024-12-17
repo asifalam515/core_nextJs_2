@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -13,7 +14,7 @@ const Page = async () => {
   const shoes = await res.json();
   // console.log(data);
   return (
-    <div>
+    <div className="text-center ">
       <h1 className="text-center text-5xl text-red-400">
         welcome to next js 222
       </h1>
@@ -40,6 +41,9 @@ const Page = async () => {
           </div>
         ))}
       </div>
+      <Link href="/all-shoes" className="mt-5 btn btn-primary">
+        See More
+      </Link>
     </div>
   );
 };

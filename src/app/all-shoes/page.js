@@ -1,13 +1,16 @@
 import { fetchExternalImage } from "next/dist/server/image-optimizer";
+import Link from "next/link";
 
 const AllShoes = async () => {
-  const res = await fetch("http://localhost:5000/shoes");
+  const res = await fetch("http://localhost:5000/shoes", {
+    cache: "no-store",
+  });
   const shoes = await res.json();
 
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-5xl text-center">All Shoes</h1>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-3 p-4">
         {shoes.map((shoe) => (
           <div key={shoe.id} className="card bg-base-100 w-96 shadow-xl">
             <figure>
