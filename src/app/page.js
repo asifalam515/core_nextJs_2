@@ -5,12 +5,16 @@ export const metadata = {
   description: "This is homepage",
 };
 const Page = async () => {
-  const res = await fetch("http://localhost:5000/shoes");
+  const res = await fetch("http://localhost:5000/shoes", {
+    cache: "force-cache",
+  });
   const shoes = await res.json();
   // console.log(data);
   return (
     <div>
-      <h1 className="text-center text-5xl text-red-400">welcome to next js</h1>
+      <h1 className="text-center text-5xl text-red-400">
+        welcome to next js 222
+      </h1>
 
       <div className="grid grid-cols-3 gap-5">
         {shoes.map((shoe) => (
