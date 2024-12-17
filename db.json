@@ -1,0 +1,40 @@
+{
+    "shoes": [
+        {
+            "id": 1,
+            "title": "Air Max 270",
+            "description": "Experience comfort and style with the Air Max 270, featuring a large Air unit and a sleek design.",
+            "price": 150
+        },
+        {
+            "id": 2,
+            "title": "Ultraboost 21",
+            "description": "Boost your run with the Ultraboost 21, offering unmatched energy return and a snug fit.",
+            "price": 180
+        },
+        {
+            "id": 3,
+            "title": "Classic Leather",
+            "description": "Stay timeless with the Classic Leather shoes, providing a vintage look and superior comfort.",
+            "price": 75
+        },
+        {
+            "id": 4,
+            "title": "Gel-Kayano 27",
+            "description": "Achieve optimal performance with the Gel-Kayano 27, designed for stability and long-distance running.",
+            "price": 160
+        },
+        {
+            "id": 5,
+            "title": "Chuck Taylor All Star",
+            "description": "Make a statement with the iconic Chuck Taylor All Star, known for its classic design and versatility.",
+            "price": 55
+        },
+        {
+            "id": 6,
+            "title": "Pegasus 37",
+            "description": "Fly through your runs with the Pegasus 37, featuring responsive cushioning and a lightweight feel.",
+            "price": 120
+        }
+    ]
+}
